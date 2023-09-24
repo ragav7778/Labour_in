@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+
+            <com.mikhaellopez.circularimageview.CircularImageView
+                android:id="@+id/profileImg"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_gravity="center"
+                android:src="@drawable/profileimage"
+
+                app:civ_border_color="#3f51b5"
+                app:civ_border_width="4dp"
+                app:civ_shadow="true"
+                app:civ_shadow_color="#3f51b5"
+                app:civ_shadow_radius="10dp"
+                tools:layout_editor_absoluteX="144dp"
+                tools:layout_editor_absoluteY="92dp"
+                />
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="10dp"
+                android:text="@string/login"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:text="@string/userid"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edituserid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/input_bg"
+                android:drawableStart="@drawable/ic_baseline_perm_contact_calendar_24"
+                android:ems="10"
+                android:hint="@string/enteruserid"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:paddingStart="5dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textSize="20sp"
+                android:text="@string/password" />
+
+            <EditText
+                android:id="@+id/editpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:background="@drawable/input_bg"
+                android:drawableStart="@drawable/ic_baseline_lock_open_24"
+                android:ems="10"
+                android:hint="@string/enterpassword"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:paddingStart="5dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/typesFilter"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                app:boxCornerRadiusBottomEnd="5dp"
+                app:boxCornerRadiusBottomStart="5dp"
+                app:boxCornerRadiusTopEnd="5dp"
+                app:boxCornerRadiusTopStart="5dp"
+                app:boxStrokeWidth="2dp"
+                app:boxStrokeWidthFocused="0dp"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/reasonDropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:inputType="none"
+                    android:backgroundTint="@color/white"
+                    android:maxLines="1"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:text="Contractor"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    tools:ignore="LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:id="@+id/gotoregister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:textSize="14sp"
+                android:textColor="@color/blue"
+                android:text="@string/gotoregister" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/login"
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:background="@drawable/bc"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="@string/login" />
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

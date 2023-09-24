@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="@string/register"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textSize="32sp" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/name"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/input_bg"
+                android:ems="10"
+                android:hint="@string/entername"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:paddingStart="15dp" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/contact"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editcontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/input_bg"
+                android:ems="10"
+                android:hint="@string/entercontact"
+                android:inputType="text"
+                android:minHeight="48dp"
+                android:paddingStart="15dp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/mailid"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/edituserid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/input_bg"
+                android:ems="10"
+                android:hint="@string/entermail"
+                android:inputType="textEmailAddress"
+                android:minHeight="48dp"
+                android:paddingStart="15dp" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:text="@string/password"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/editpassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/input_bg"
+                android:ems="10"
+                android:hint="@string/password"
+                android:inputType="textPassword"
+                android:minHeight="48dp"
+                android:paddingStart="15dp" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/typesFilter"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_gravity="center"
+                android:layout_margin="20dp"
+                app:boxCornerRadiusBottomEnd="5dp"
+                app:boxCornerRadiusBottomStart="5dp"
+                app:boxCornerRadiusTopEnd="5dp"
+                app:boxCornerRadiusTopStart="5dp"
+                app:boxStrokeWidth="2dp"
+                app:boxStrokeWidthFocused="0dp"
+                >
+
+                <AutoCompleteTextView
+                    android:id="@+id/reasonDropDown"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:inputType="none"
+                    android:backgroundTint="@color/white"
+                    android:maxLines="1"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:singleLine="true"
+                    android:text="Contractor"
+                    android:textAlignment="center"
+                    android:textColor="@color/black"
+                    tools:ignore="LabelFor" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <LinearLayout
+                android:id="@+id/contractor"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/company"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/company"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editcompany"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/input_bg"
+                    android:ems="10"
+                    android:hint="@string/entercompany"
+                    android:inputType="text"
+                    android:minHeight="48dp"
+                    android:paddingStart="15dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/labourer"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/age"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:text="@string/age"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/input_bg"
+                    android:ems="10"
+                    android:hint="@string/enterage"
+                    android:inputType="number"
+                    android:minHeight="48dp"
+                    android:paddingStart="15dp" />
+
+                <TextView
+                    android:id="@+id/height"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="@string/height"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editheight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/input_bg"
+                    android:ems="10"
+                    android:hint="@string/enterheight"
+                    android:inputType="numberDecimal"
+                    android:minHeight="48dp"
+                    android:paddingStart="15dp" />
+
+                <TextView
+                    android:id="@+id/weight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="@string/weight"
+                    android:textSize="20sp" />
+
+                <EditText
+                    android:id="@+id/editweight"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/input_bg"
+                    android:ems="10"
+                    android:hint="@string/enterweight"
+                    android:inputType="numberDecimal"
+                    android:minHeight="48dp"
+                    android:paddingStart="15dp" />
+
+                <TextView
+                    android:id="@+id/genderText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="20dp"
+                    android:text="@string/gender"
+                    android:textSize="20sp" />
+
+                <RadioGroup
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginLeft="20dp" >
+
+                    <RadioButton
+                        android:id="@+id/male"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/male" />
+                    <RadioButton
+                        android:id="@+id/female"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/female" />
+                </RadioGroup>
+
+
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/gotologin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="30dp"
+                android:textSize="14sp"
+                android:textColor="@color/blue"
+                android:text="@string/gotologin" />
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/register"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/bc"
+                android:textColor="@color/white"
+                android:gravity="center"
+                android:text="@string/register" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
